@@ -10,13 +10,13 @@
 <body>
     <h1>HOLA MUNDO</h1>
     <p> Digite aqui seu belicimo nome : <br>
-        <input type="text" onchange="HelloWord()">
+        <input id="nome" type="text" onchange="HelloWord()">
     </p>
 
     <script>
         function HelloWord(){
-            var input = document.querySelector('input');
-            var input = input.value;
+            var campoNome = document.getElementById('nome');
+            var nome = campoNomeg.value;
             window.alert('Hello meu truta,' + nome + " !");
         }
     </script>
