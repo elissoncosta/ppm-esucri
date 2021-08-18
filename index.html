@@ -13,11 +13,13 @@
         <input id="nome" type="text" onchange="HelloWord()">
     </p>
 
-    <script>
+    <script src="">
         function HelloWord(){
             var campoNome = document.getElementById('nome');
             var nome = campoNomeg.value;
-            window.alert('Hello meu truta,' + nome + " !");
+            var mensagem = "Hello meu truta," + nome + " !";
+            var paragrafo = document.getElementById('mensagem');
+            paragrafo.innerText = mensagem;
         }
     </script>
 </body>
